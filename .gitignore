@@ -1,0 +1,21 @@
+node_modules/
+npm-debug.log*
+
+# paquetes de extensión y claves
+*.zip
+*.crx
+*.pem
+
+# volcados de HTML o capturas de plataformas de terceros usados para depurar
+codee.txt
+*.har
+
+# secretos y logs
+.env
+.env.*
+*.log
+
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

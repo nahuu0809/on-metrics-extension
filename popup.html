@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Configuracion ON Metrics</title>
+  <style>
+    /* CSS existente */
+  </style>
+</head>
+<body>
+  <h2>Configuracion ON Metrics</h2>
+
+  <div class="section">
+    <p class="section-title">Intervalo de actualizacion (ms)</p>
+    <input type="number" id="interval" value="5000" min="4000" step="1000">
+  </div>
+
+  <div class="section">
+    <p class="section-title">Fuente de dolar MEP</p>
+    <select id="mepSource">
+      <option value="dolar_si">DolarSi</option>
+      <option value="rava">Rava</option>
+    </select>
+  </div>
+
+  <div class="section color-thresholds">
+    <p class="section-title">Umbrales de color (% vs MEP)</p>
+    <div class="input-group">
+      <label for="green">Verde (&lt;):</label>
+      <input type="number" id="green" step="0.01" value="-0.05">
+    </div>
+    <div class="input-group">
+      <label for="yellowMin">Amarillo min (&gt;):</label>
+      <input type="number" id="yellowMin" step="0.01" value="-0.01">
+    </div>
+    <div class="input-group">
+      <label for="yellowMax">Amarillo max (&lt;):</label>
+      <input type="number" id="yellowMax" step="0.01" value="0.01">
+    </div>
+    <div class="input-group">
+      <label for="red">Rojo (&gt;):</label>
+      <input type="number" id="red" step="0.01" value="0.05">
+    </div>
+  </div>
+
+  <button id="saveButton" class="button">Guardar configuracion</button>
+  <p id="statusMessage" class="status-message"></p>
+
+  <script src="popup.js"></script>
+</body>
+</html>

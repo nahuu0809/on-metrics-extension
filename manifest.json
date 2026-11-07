@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "ON Metrics for Portfolio Personal",
+  "version": "2.2",
+  "description": "Inyecta TC Implicito y % vs MEP en la Watchlist de ONs, con actualizacion por polling y colores configurables.",
+  "permissions": [
+    "scripting",
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://*.portfoliopersonal.com/*",
+    "https://www.dolarsi.com/*",
+    "https://www.rava.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://trading.portfoliopersonal.com/Cotizaciones/WatchList*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "icons": {
+    "128": "icon.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128": "icon.png"
+    }
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}
