@@ -44,3 +44,12 @@ Desde el popup de la extensión:
 - El mapa de tickers (`tickerIdMap` en `content.js`) está escrito a mano y hay que actualizarlo cuando se agregan ONs a la lista.
 - No es una recomendación de inversión: muestra un cálculo con los precios que ve en pantalla.
 - Proyecto independiente, sin relación con Portfolio Personal.
+
+## Créditos y marcas
+
+- Cotización del dólar MEP: [DolarSi](https://www.dolarsi.com) y [Rava Bursátil](https://www.rava.com).
+- La extensión se usa sobre la plataforma de [Portfolio Personal](https://www.portfoliopersonal.com). Este proyecto es independiente y no tiene relación ni respaldo de esa empresa. Las marcas pertenecen a sus dueños.
+
+## Licencia
+
+Código bajo [licencia MIT](LICENSE). © 2026 Nahuel Emiliano Diaz.
